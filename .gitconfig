@@ -5,20 +5,20 @@
 	editor = subl
 	excludesfile = /Users/Ashish/.gitignore_global
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
 [merge]
-	tool = Kaleidoscope
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
-	prompt = false
 [mergetool]
 	prompt = false
 [diff]
+	renames = copies
 	tool = Kaleidoscope
 [color]
 	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
 [push]
 	default = current
 [filter "media"]
@@ -26,6 +26,7 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 [alias]
+	amend = commit --amend --reuse-message=HEAD
 	c = commit -m
 	co = checkout
 	d = difftool
@@ -35,3 +36,16 @@
 	helper = osxkeychain
 [github]
 	user = ashishkumar
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
