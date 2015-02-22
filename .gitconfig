@@ -1,0 +1,37 @@
+[user]
+	name = Ashish Kumar
+	email = ashish@ashish.co
+[core]
+	editor = subl
+	excludesfile = /Users/Ashish/.gitignore_global
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[color]
+	ui = true
+[push]
+	default = current
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[alias]
+	c = commit -m
+	co = checkout
+	d = difftool
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	s = status -sb
+[credential]
+	helper = osxkeychain
+[github]
+	user = ashishkumar
