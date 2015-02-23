@@ -30,6 +30,13 @@ alias brewd="brew update && brew upgrade && brew cleanup && brew doctor"
 
 alias l="ls -la"
 
+# Git
+alias gc="git c"
+alias gco="git co"
+alias gd="git d"
+alias gl="git l"
+alias gs="git s"
+
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
 

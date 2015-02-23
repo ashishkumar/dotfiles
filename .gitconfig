@@ -4,10 +4,6 @@
 [core]
 	editor = subl
 	excludesfile = /Users/Ashish/.gitignore_global
-[mergetool "Kaleidoscope"]
-[merge]
-[difftool "Kaleidoscope"]
-[difftool]
 [mergetool]
 	prompt = false
 [diff]
@@ -30,7 +26,7 @@
 	c = commit -m
 	co = checkout
 	d = difftool
-	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit
 	s = status -sb
 [credential]
 	helper = osxkeychain
