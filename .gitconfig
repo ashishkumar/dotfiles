@@ -26,7 +26,7 @@
 	c = commit -m
 	co = checkout
 	d = difftool
-	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit
+	l = log --color --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>'
 	s = status -sb
 [credential]
 	helper = osxkeychain
