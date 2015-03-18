@@ -28,7 +28,7 @@ eval "$(hub alias -s)"
 
 alias brewd="brew update && brew upgrade && brew cleanup && brew doctor"
 
-alias l="ls -la"
+alias l="ls -aGhl"
 
 # Git
 alias gc="git c"
