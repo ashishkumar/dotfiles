@@ -4,6 +4,7 @@
 [core]
 	editor = subl
 	excludesfile = /Users/Ashish/.gitignore_global
+	mergeoptions = --no-edit
 [mergetool]
 	prompt = false
 [diff]
