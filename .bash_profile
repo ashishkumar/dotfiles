@@ -12,6 +12,7 @@ export PS1="\[$(tput setaf 6)\]\w\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput
 
 # Homebrew
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/sbin
 
 # PHP Composer
 export PATH=$PATH:$HOME/.composer/vendor/bin
@@ -36,6 +37,13 @@ alias gco="git co"
 alias gd="git d"
 alias gl="git l"
 alias gs="git s"
+
+# Ruby/Rails
+alias bi="bundle install"
+alias be="bundle exec"
+
+# Locations
+alias b="cd ~/Developer/backend"
 
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
