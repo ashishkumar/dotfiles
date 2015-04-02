@@ -41,12 +41,22 @@ alias gs="git s"
 # Ruby/Rails
 alias bi="bundle install"
 alias be="bundle exec"
+alias tfdl="tail -f log/development.log"
+alias tftl="tail -f log/test.log"
 
-# Locations
-alias b="cd ~/Developer/backend"
+# Laravel
+alias pa="php arstisan"
 
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
 
 # Search inside all files in current directory
 alias f="grep --line-number --recursive --color=always . -e"
+
+# MISC
+# ====
+
+# Use up/down arrow keys to search history
+# http://furbo.org/2014/09/03/the-terminal/#search-setup
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
