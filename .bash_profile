@@ -32,10 +32,14 @@ alias brewd="brew update && brew upgrade && brew cleanup && brew doctor"
 alias l="ls -aGhl"
 
 # Git
-alias gc="git c"
-alias gco="git co"
-alias gd="git d"
+alias ga="git add"
+alias gaa="git add ."
+alias gc="git commit -m"
+alias gco="git checkout"
+alias gd="git difftool"
 alias gl="git l"
+alias gp="git push"
+alias gpp="git pull && git push"
 alias gs="git s"
 
 # Ruby/Rails

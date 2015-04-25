@@ -2,7 +2,6 @@
 	name = Ashish Kumar
 	email = ashish@ashish.co
 [core]
-	editor = subl
 	excludesfile = /Users/Ashish/.gitignore_global
 	mergeoptions = --no-edit
 [mergetool]
@@ -46,3 +45,7 @@
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
