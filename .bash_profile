@@ -27,7 +27,7 @@ eval "$(hub alias -s)"
 # ALIASES
 # =======
 
-alias brewd="brew update && brew upgrade && brew cleanup && brew doctor"
+alias brewd="brew update && brew upgrade --all && brew cleanup && brew doctor"
 
 alias l="ls -aGhl"
 
