@@ -2,6 +2,7 @@
 	name = Ashish Kumar
 	email = ashish@ashish.co
 [core]
+	editor = subl -w
 	excludesfile = /Users/Ashish/.gitignore_global
 	mergeoptions = --no-edit
 [mergetool]
