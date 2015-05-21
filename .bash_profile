@@ -66,3 +66,8 @@ alias f="grep --line-number --recursive --color=always . -e"
 # http://furbo.org/2014/09/03/the-terminal/#search-setup
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
+
+# Unlimited Bash History
+# http://superuser.com/questions/137438/how-to-unlimited-bash-shell-history
+HISTSIZE=
+HISTFILESIZE=
