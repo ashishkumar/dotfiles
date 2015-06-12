@@ -144,7 +144,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AuAAAAAAAAEBCAAoADXxAQRmlyYU1vbm8tUmVndWxhctITFBUWWiRjbGFzc25h
+	YXNzI0AqAAAAAAAAEBCAAoADXxAQRmlyYU1vbm8tUmVndWxhctITFBUWWiRjbGFzc25h
 	bWVYJGNsYXNzZXNWTlNGb250ohUXWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0Rob
 	VHJvb3SAAQgRGiMtMjc8QktSW2JpcnR2eIuQm6SrrrfJzNEAAAAAAAABAQAAAAAAAAAc
 	AAAAAAAAAAAAAAAAAAAA0w==
@@ -177,11 +177,11 @@
 	<key>UseBrightBold</key>
 	<false/>
 	<key>columnCount</key>
-	<integer>120</integer>
+	<integer>170</integer>
 	<key>name</key>
 	<string>Coda Bright</string>
 	<key>rowCount</key>
-	<integer>35</integer>
+	<integer>45</integer>
 	<key>shellExitAction</key>
 	<integer>1</integer>
 	<key>type</key>
