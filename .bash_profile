@@ -29,7 +29,7 @@ eval "$(hub alias -s)"
 
 alias brewd="brew update && brew upgrade --all && brew cleanup && brew doctor"
 alias flushdns="sudo discoveryutil mdnsflushcache; sudo discoveryutil udnsflushcaches"
-alias refresh="source ~/.bash_profile"
+alias reload="source ~/.bash_profile"
 
 alias l="ls -aGhl"
 
