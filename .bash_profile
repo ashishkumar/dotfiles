@@ -1,3 +1,6 @@
+# ENCODING
+export LANG=en_US.UTF-8
+
 # TERMINAL PROMPT
 # Git branch script from http://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac
 # Custom bash prompt via kirsle.net/wizards/ps1.html
@@ -58,6 +61,9 @@ alias pa="php arstisan"
 
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
+
+# PostgreSQL
+alias pgs="postgres -D /usr/local/var/postgres"
 
 # Search inside all files in current directory
 alias f="grep --line-number --recursive --color=always . -e"
