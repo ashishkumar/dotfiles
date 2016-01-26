@@ -13,7 +13,14 @@ rbenv_version() {
   rbenv version | sed -e 's/ .*//'
 }
 
-export PS1="\[$(tput setaf 4)\]\w\[$(tput setaf 5)\] [\$(rbenv_version)]\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput sgr0)\] "
+print_rbenv_version() {
+  if test "${PWD##/Users/Ashish/Developer}" != "${PWD}"
+  then
+    echo | rbenv version | sed -e 's/ .*//'
+  fi
+}
+
+export PS1="\[$(tput setaf 4)\]\w\[$(tput setaf 5)\] \$(print_rbenv_version)\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput sgr0)\] "
 
 # SET PATH
 # ========
@@ -21,9 +28,6 @@ export PS1="\[$(tput setaf 4)\]\w\[$(tput setaf 5)\] [\$(rbenv_version)]\[$(tput
 # Homebrew
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/local/sbin
-
-# PHP Composer
-export PATH=$PATH:$HOME/.composer/vendor/bin
 
 # rbenv setup
 export PATH=$PATH:$HOME/.rbenv/bin
@@ -42,6 +46,7 @@ alias reload="source ~/.bash_profile"
 alias l="ls -aGhl"
 
 # Git
+alias g="git"
 alias ga="git add"
 alias gaa="git add ."
 alias gc="git commit -m"
@@ -56,13 +61,11 @@ alias gpp="git pull && git push"
 alias gs="git s"
 
 # Ruby/Rails
+alias r="rails"
 alias bi="bundle install"
 alias be="bundle exec"
 alias tfdl="tail -f log/development.log"
 alias tftl="tail -f log/test.log"
-
-# Laravel
-alias pa="php arstisan"
 
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
