@@ -4,7 +4,7 @@
 [core]
 	editor = atom --wait
 	excludesfile = /Users/Ashish/.gitignore_global
-	mergeoptions = --no-edit
+	# mergeoptions = --no-edit
 [mergetool]
 	prompt = false
 [diff]
