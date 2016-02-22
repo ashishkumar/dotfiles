@@ -83,6 +83,10 @@ alias themes="cd ~/Developer/eet.nu/gelato/vendor/themes"
 # MISC
 # ====
 
+# Timing Terminal Support
+PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
+
 # Use up/down arrow keys to search history
 # http://furbo.org/2014/09/03/the-terminal/#search-setup
 bind '"\e[A":history-search-backward'
