@@ -37,6 +37,7 @@ eval "$(hub alias -s)"
 alias brewd="brew update && brew upgrade --all && brew cleanup && brew doctor"
 alias flushdns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias reload="source ~/.bash_profile"
+alias dev="cd ~/Developer/"
 
 # UNIX Helpers
 alias f="grep --line-number --recursive --color=always . -e"
@@ -78,7 +79,16 @@ alias butler="cd ~/Developer/eet.nu/butler"
 alias design="cd ~/Developer/eet.nu/design"
 alias gelato="cd ~/Developer/eet.nu/gelato"
 alias guide="cd ~/Developer/eet.nu/guide"
-alias themes="cd ~/Developer/eet.nu/gelato/vendor/themes"
+alias thai="cd ~/Developer/eet.nu/thai"
+
+# FUNCTIONS
+# =========
+function scaffold {
+  mkdir -p $1/assets/{css,js,img,fonts}
+  touch $1/index.html
+  touch $1/assets/style.css
+  touch $1/assets/scripts.js
+}
 
 # MISC
 # ====
@@ -86,6 +96,9 @@ alias themes="cd ~/Developer/eet.nu/gelato/vendor/themes"
 # Timing Terminal Support
 PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
 export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
+
+# Speed up Cocoapods
+export COCOAPODS_DISABLE_STATS=1
 
 # Use up/down arrow keys to search history
 # http://furbo.org/2014/09/03/the-terminal/#search-setup
