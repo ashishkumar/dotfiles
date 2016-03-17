@@ -51,6 +51,7 @@ alias gaa="git add ."
 alias gc="git commit -m"
 alias gac="git commit -am"
 alias gco="git checkout"
+alias gcl="git_clone"
 alias gd="git difftool"
 alias gf="git fetch"
 alias gl="git l"
@@ -88,6 +89,28 @@ function scaffold {
   touch $1/index.html
   touch $1/assets/style.css
   touch $1/assets/scripts.js
+}
+
+function network {
+  while true
+  do
+    ping -c 2 -t 3 nu.nl > /dev/null
+    if [ $? -eq 0 ]
+      then echo `date` '- alive'
+      sleep 2
+    else
+      echo `date` '- dead'
+      open -g -a "Airport Utility"
+      sleep 2
+      osascript -e 'quit app "Airport Utility"'
+    fi
+  done
+}
+
+function git_clone {
+  cd ~/Developer/external
+  git clone $1 $1
+  cd $1
 }
 
 # MISC
