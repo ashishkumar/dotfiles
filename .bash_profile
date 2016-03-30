@@ -94,7 +94,7 @@ function scaffold {
 function network {
   while true
   do
-    ping -c 2 -t 3 nu.nl > /dev/null
+    ping -c 2 -t 3 8.8.8.8 > /dev/null
     if [ $? -eq 0 ]
       then echo `date` '- alive'
       sleep 2
