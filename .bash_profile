@@ -64,6 +64,8 @@ alias gs="git s"
 alias be="bundle exec"
 alias bi="bundle install"
 alias r="rails"
+alias rc="bundle exec rails c"
+alias rcs="bundle exec rails c -s"
 alias tfdl="tail -f log/development.log"
 alias tftl="tail -f log/test.log"
 
