@@ -40,7 +40,7 @@ alias reload="source ~/.bash_profile"
 alias dev="cd ~/Developer/"
 
 # UNIX Helpers
-alias f="grep --line-number --recursive --color=always . -e"
+alias f="grep --line-number --recursive --binary-file=without-match --color=always . -e"
 alias l="ls -aGhl"
 alias t="tree -Cph --du"
 
