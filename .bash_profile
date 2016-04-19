@@ -75,14 +75,12 @@ alias hs="python -m SimpleHTTPServer 3000"
 # PostgreSQL
 alias pgs="postgres -D /usr/local/var/postgres"
 
-# Eet.nu Directories
-alias eet="cd ~/Developer/eet.nu"
-alias backend="cd ~/Developer/eet.nu/backend"
-alias butler="cd ~/Developer/eet.nu/butler"
-alias design="cd ~/Developer/eet.nu/design"
-alias gelato="cd ~/Developer/eet.nu/gelato"
-alias guide="cd ~/Developer/eet.nu/guide"
-alias thai="cd ~/Developer/eet.nu/thai"
+# Dev Directories
+alias backend="cd ~/Developer/backend"
+alias butler="cd ~/Developer/butler"
+alias design="cd ~/Developer/design"
+alias gelato="cd ~/Developer/gelato"
+alias guide="cd ~/Developer/guide"
 
 # FUNCTIONS
 # =========
