@@ -102,3 +102,5 @@ endif
 
 set expandtab
 
+set runtimepath^=~/.vim/packages/ctrlp.vim
+
