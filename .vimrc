@@ -1,3 +1,7 @@
+syntax enable
+set background=dark
+colorscheme solarized
+
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -17,8 +21,6 @@ set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
 " Don’t add empty newlines at the end of files
-set binary
-set noeol
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
@@ -40,7 +42,7 @@ set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
-"set cursorline
+set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
@@ -100,7 +102,11 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
+" Convert tabs to spaces
 set expandtab
 
 set runtimepath^=~/.vim/packages/ctrlp.vim
+
+" Set default shell
+set shell=/usr/local/bin/bash
 
