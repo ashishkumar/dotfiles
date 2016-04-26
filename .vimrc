@@ -124,3 +124,7 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+set autoindent
+set breakindent
+set breakindentopt=shift:4
+
