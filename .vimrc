@@ -110,3 +110,7 @@ set runtimepath^=~/.vim/packages/ctrlp.vim
 " Set default shell
 set shell=/usr/local/bin/bash
 
+" Navigate Tabs
+map <C-Left>  :tabp  <CR>
+map <C-Right> :tabn  <CR>
+
