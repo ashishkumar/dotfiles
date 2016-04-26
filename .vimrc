@@ -39,6 +39,7 @@ set exrc
 set secure
 " Enable line numbers
 set number
+set numberwidth=5
 " Enable syntax highlighting
 syntax on
 " Highlight current line
