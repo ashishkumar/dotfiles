@@ -111,8 +111,8 @@ set runtimepath^=~/.vim/packages/ctrlp.vim
 set shell=/usr/local/bin/bash
 
 " Navigate Tabs
-map <C-Left>  :tabp  <CR>
-map <C-Right> :tabn  <CR>
+map <C-Left>  <ESC> :tabp  <CR>
+map <C-Right> <ESC> :tabn  <CR>
 
 " Improve Split Navigation
 nnoremap <C-J> <C-W><C-J>
