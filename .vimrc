@@ -114,3 +114,13 @@ set shell=/usr/local/bin/bash
 map <C-Left>  :tabp  <CR>
 map <C-Right> :tabn  <CR>
 
+" Improve Split Navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Insert split panes in correct locations
+set splitbelow
+set splitright
+
