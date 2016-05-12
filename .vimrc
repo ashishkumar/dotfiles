@@ -1,6 +1,6 @@
 syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+":colorscheme solarized
 
 " Make Vim more useful
 set nocompatible
