@@ -34,10 +34,9 @@ eval "$(hub alias -s)"
 # ALIASES
 # =======
 
-alias brewd="brew update && brew upgrade --all && brew cleanup && brew doctor"
+alias brewd="brew update && brew upgrade && brew cleanup && brew doctor"
 alias flushdns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias reload="source ~/.bash_profile"
-alias dev="cd ~/Developer/"
 
 # UNIX Helpers
 alias f="grep --line-number --recursive --binary-file=without-match --color=always . -e"
@@ -45,25 +44,19 @@ alias l="ls -aGhl"
 alias t="tree -Cph --du"
 
 # Git
-alias g="git"
 alias ga="git add"
-alias gaa="git add ."
 alias gc="git commit -m"
 alias gac="git commit -am"
 alias gco="git checkout"
-alias gcl="git_clone"
 alias gd="git difftool"
-alias gf="git fetch"
 alias gl="git l"
 alias gp="git push"
 alias gpl="git pull"
-alias gpp="git pull && git push"
 alias gs="git s"
 
 # Ruby/Rails
 alias be="bundle exec"
 alias bi="bundle install"
-alias r="rails"
 alias rc="bundle exec rails c"
 alias rcs="bundle exec rails c -s"
 alias tfdl="tail -f log/development.log"
@@ -71,47 +64,6 @@ alias tftl="tail -f log/test.log"
 
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
-
-# PostgreSQL
-alias pgs="postgres -D /usr/local/var/postgres"
-
-# Dev Directories
-alias backend="cd ~/Developer/backend"
-alias butler="cd ~/Developer/butler"
-alias design="cd ~/Developer/design"
-alias gelato="cd ~/Developer/gelato"
-alias guide="cd ~/Developer/guide"
-
-# FUNCTIONS
-# =========
-function scaffold {
-  mkdir -p $1/assets/{css,js,img,fonts}
-  touch $1/index.html
-  touch $1/assets/style.css
-  touch $1/assets/scripts.js
-}
-
-function network {
-  while true
-  do
-    ping -c 2 -t 3 8.8.8.8 > /dev/null
-    if [ $? -eq 0 ]
-      then echo `date` '- alive'
-      sleep 2
-    else
-      echo `date` '- dead'
-      open -g -a "Airport Utility"
-      sleep 2
-      osascript -e 'quit app "Airport Utility"'
-    fi
-  done
-}
-
-function git_clone {
-  cd ~/Developer/external
-  git clone $1 $1
-  cd $1
-}
 
 # MISC
 # ====
