@@ -1,4 +1,6 @@
 {
-  "analytics": false,
-  "directory": "./vendor"
+  "analytics":          false,
+  "color":              true,
+  "directory":          "./assets/vendor"
 }
+
