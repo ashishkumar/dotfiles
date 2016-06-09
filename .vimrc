@@ -106,6 +106,8 @@ endif
 set expandtab
 
 set runtimepath^=~/.vim/packages/ctrlp.vim
+set runtimepath^=~/.vim/packages/vim-airline
+set runtimepath^=~/.vim/packages/editorconfig-vim
 
 " Set default shell
 set shell=/usr/local/bin/bash
@@ -127,4 +129,6 @@ set splitright
 set autoindent
 " set breakindent
 " set breakindentopt=shift:4
+
+let g:airline_powerline_fonts = 1
 
