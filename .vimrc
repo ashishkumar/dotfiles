@@ -110,7 +110,7 @@ set runtimepath^=~/.vim/packages/vim-airline
 set runtimepath^=~/.vim/packages/editorconfig-vim
 set runtimepath^=~/.vim/packages/vim-rails
 set runtimepath^=~/.vim/packages/vim-bundler
-set runtimepath^=~/.vim/packages/vim-gitgutter
+"set runtimepath^=~/.vim/packages/vim-gitgutter
 
 " Set default shell
 set shell=/usr/local/bin/bash
