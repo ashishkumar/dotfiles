@@ -9,7 +9,7 @@ parse_git_branch() {
 }
 
 rbenv_version() {
-  if test "${PWD##/Users/Ashish/Developer}" != "${PWD}"
+  if test "${PWD##~/developer}" != "${PWD}"
   then
     echo | rbenv version | sed -e 's/ .*//'
   fi
@@ -87,3 +87,4 @@ bind '"\e[B":history-search-forward'
 # http://superuser.com/questions/137438/how-to-unlimited-bash-shell-history
 HISTSIZE=
 HISTFILESIZE=
+
