@@ -1,0 +1,10 @@
+packages: [
+  "base16-syntax"
+  "dash"
+  "editorconfig"
+  "language-haml"
+  "language-scala"
+  "language-swift"
+  "native-ui"
+  "package-sync"
+]
