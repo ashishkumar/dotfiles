@@ -6,7 +6,7 @@
     <string>co.ashish.airport_fix</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/Users/Ashish/Developer/scripts/airport_fix.sh</string>
+      <string>/Users/Ashish/.dotfiles/scripts/airport_fix.sh</string>
     </array>
     <key>StartInterval</key>
     <integer>10</integer>
