@@ -36,6 +36,7 @@
       "bookmarks"
       "editorconfig"
       "language-haml"
+      "status-bar"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -43,16 +44,25 @@
       ".sass-cache"
     ]
   editor:
-    fontFamily: "Fira Mono"
+    fontFamily: "Menlo"
+    fontSize: 12
     invisibles: {}
+    showInvisibles: true
     softWrap: true
     softWrapHangingIndent: 4
   "exception-reporting":
     userId: "b92ca551-61bf-678d-277a-6ee968fa95ef"
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
   "one-dark-ui":
     layoutMode: "Compact"
+    tabSizing: "Minimum"
   "one-light-ui":
     layoutMode: "Compact"
+    tabSizing: "Minimum"
+  "package-sync": {}
   "status-bar": {}
   tabs:
     alwaysShowTabBar: false
@@ -60,7 +70,6 @@
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
-    showOnRightSide: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
