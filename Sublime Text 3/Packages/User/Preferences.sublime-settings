@@ -1,0 +1,30 @@
+{
+	"color_scheme": "Packages/Base16 Color Schemes/base16-google.light.tmTheme",
+	"copy_with_empty_selection": false,
+	"draw_indent_guides": true,
+	"draw_white_space": "selection",
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"tmp",
+		".bundle",
+		".sass-cache",
+		".idea"
+	],
+	"font_face": "Fira Mono",
+	"font_size": 13.0,
+	"highlight_line": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_numbers": true,
+	"open_files_in_new_window": false,
+	"tab_size": 2,
+	"theme": "Spacegray Light.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": false,
+	"word_wrap": true
+}
