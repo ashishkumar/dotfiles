@@ -37,6 +37,8 @@
       "editorconfig"
       "language-haml"
       "status-bar"
+      "minimap"
+      "minimap-git-diff"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -44,8 +46,8 @@
       ".sass-cache"
     ]
   editor:
-    fontFamily: "Menlo"
-    fontSize: 12
+    fontFamily: "SF Mono"
+    fontSize: 10
     invisibles: {}
     showInvisibles: true
     softWrap: true
@@ -65,7 +67,6 @@
   "package-sync": {}
   "status-bar": {}
   tabs:
-    alwaysShowTabBar: false
     showIcons: false
   "tree-view":
     hideIgnoredNames: true
