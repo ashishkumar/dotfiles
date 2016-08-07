@@ -28,6 +28,9 @@ export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:$HOME/.rbenv/bin
 eval "$(rbenv init -)"
 
+# PHP composer
+export PATH=$PATH:$HOME/.composer/vendor/bin
+
 # GitHub hub
 eval "$(hub alias -s)"
 
