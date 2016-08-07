@@ -45,10 +45,16 @@
       ".git"
       ".sass-cache"
     ]
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor:
     fontFamily: "SF Mono"
-    fontSize: 10
-    invisibles: {}
+    fontSize: 12
+    fontWeight: "Medium"
+    invisibles:
+      eol: " "
     showInvisibles: true
     softWrap: true
     softWrapHangingIndent: 4
