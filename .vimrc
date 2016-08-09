@@ -106,8 +106,8 @@ endif
 set expandtab
 
 set runtimepath^=~/.vim/packages/ctrlp.vim
-set runtimepath^=~/.vim/packages/vim-airline
-set runtimepath^=~/.vim/packages/vim-airline-themes
+"set runtimepath^=~/.vim/packages/vim-airline
+"set runtimepath^=~/.vim/packages/vim-airline-themes
 set runtimepath^=~/.vim/packages/editorconfig-vim
 set runtimepath^=~/.vim/packages/vim-rails
 set runtimepath^=~/.vim/packages/vim-bundler
