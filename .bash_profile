@@ -8,14 +8,7 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-rbenv_version() {
-  if test "${PWD##~/developer}" != "${PWD}"
-  then
-    echo | rbenv version | sed -e 's/ .*//'
-  fi
-}
-
-export PS1="\[$(tput setaf 4)\]\w\[$(tput setaf 5)\] \$(rbenv_version)\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput sgr0)\] "
+export PS1="\[$(tput setaf 4)\]\w\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput sgr0)\] "
 
 # SET PATH
 # ========
