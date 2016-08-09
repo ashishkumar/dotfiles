@@ -35,6 +35,9 @@ alias flushdns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias reload="source ~/.bash_profile"
 alias xcode="open -a Xcode"
 
+alias wifion="cd ~/.dotfiles/scripts;./init.sh;cd -"
+alias wifioff="cd ~/.dotfiles/scripts;./deinit.sh;cd -"
+
 # UNIX Helpers
 alias f="grep --line-number --recursive --binary-file=without-match --color=always . -e"
 alias l="ls -aGhl"
