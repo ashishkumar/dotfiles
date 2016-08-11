@@ -35,9 +35,6 @@ alias flushdns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias reload="source ~/.bash_profile"
 alias xcode="open -a Xcode"
 
-alias wifion="cd ~/.dotfiles/scripts;./init.sh;cd -"
-alias wifioff="cd ~/.dotfiles/scripts;./deinit.sh;cd -"
-
 # UNIX Helpers
 alias f="grep --line-number --recursive --binary-file=without-match --color=always . -e"
 alias l="ls -aGhl"
@@ -64,6 +61,25 @@ alias tftl="tail -f log/test.log"
 
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
+
+# FUNCTIONS
+# =========
+
+# Toggle Airport Utility fix
+wifion() {
+  cd ~/.dotfiles/scripts
+  ./init.sh               2>/dev/null # Supress error messages
+  cd -                    >/dev/null  # Supress output
+  
+  echo 'Airport Utility auto-launch enabled'
+}
+wifioff() {
+  cd ~/.dotfiles/scripts
+  ./deinit.sh             2>/dev/null # Supress error messages
+  cd -                    >/dev/null  # Supress output
+  
+  echo 'Airport Utility auto-launch disabled'
+}
 
 # MISC
 # ====
