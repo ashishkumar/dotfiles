@@ -1,87 +1,29 @@
 "*":
-  "base16-syntax":
-    scheme: "Google"
-    style: "Light"
   core:
     disabledPackages: [
-      "welcome"
-      "whitespace"
-      "package-generator"
-      "metrics"
-      "autoflow"
-      "autosave"
+      "archive-view"
       "background-tips"
+      "bookmarks"
       "deprecation-cop"
       "dev-live-reload"
-      "encoding-selector"
-      "release-notes"
-      "styleguide"
-      "wrap-guide"
-      "about"
-      "archive-view"
       "exception-reporting"
-      "keybinding-resolver"
-      "markdown-preview"
+      "incompatible-packages"
       "link"
-      "notifications"
-      "snippets"
+      "markdown-preview"
+      "metrics"
+      "package-generator"
       "spell-check"
-      "symbols-view"
-      "update-package-dependencies"
+      "styleguide"
       "timecop"
-      "autocomplete-snippets"
-      "dash"
-      "language-scala"
-      "language-swift"
-      "bookmarks"
-      "editorconfig"
-      "language-haml"
-      "status-bar"
-      "minimap"
-      "minimap-git-diff"
-    ]
-    excludeVcsIgnoredPaths: false
-    ignoredNames: [
-      ".git"
-      ".sass-cache"
+      "welcome"
+      "wrap-guide"
+      "whitespace"
     ]
   editor:
-    fontFamily: "SF Mono"
-    fontSize: 12
-    fontWeight: "Medium"
     invisibles:
       eol: " "
     showInvisibles: true
-    softWrap: true
-    softWrapHangingIndent: 4
   "exception-reporting":
-    userId: "b92ca551-61bf-678d-277a-6ee968fa95ef"
-  minimap:
-    plugins:
-      "git-diff": true
-      "git-diffDecorationsZIndex": 0
-  "one-dark-ui":
-    layoutMode: "Compact"
-    tabSizing: "Minimum"
-  "one-light-ui":
-    layoutMode: "Compact"
-    tabSizing: "Minimum"
-  "package-sync": {}
-  "status-bar": {}
-  tabs:
-    showIcons: false
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-    squashDirectoryNames: true
+    userId: "5933e6f3-2312-f159-fa30-02a1f1c8225f"
   welcome:
     showOnStartup: false
-".haml.text":
-  editor:
-    softWrapHangingIndent: 4
-".hamlc.text":
-  editor:
-    softWrapHangingIndent: 4
-".ini.source":
-  editor:
-    softWrapHangingIndent: 4
