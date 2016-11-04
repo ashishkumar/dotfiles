@@ -19,11 +19,24 @@
       "wrap-guide"
       "whitespace"
     ]
+    telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor:
+    fontFamily: "SF Mono"
+    fontSize: 12
     invisibles:
       eol: " "
     showInvisibles: true
   "exception-reporting":
     userId: "5933e6f3-2312-f159-fa30-02a1f1c8225f"
+  "one-dark-ui":
+    layoutMode: "Compact"
+    tabSizing: "Minimum"
+  "one-light-ui":
+    layoutMode: "Compact"
+    tabSizing: "Minimum"
   welcome:
     showOnStartup: false
