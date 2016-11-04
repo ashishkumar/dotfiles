@@ -34,6 +34,7 @@ alias brewd="brew update && brew upgrade && brew cleanup && brew doctor"
 alias flushdns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias reload="source ~/.bash_profile"
 alias xcode="open -a Xcode"
+alias upgrade="brewd; mas upgrade"
 
 # UNIX Helpers
 alias f="grep --line-number --recursive --binary-file=without-match --color=always . -e"
@@ -54,8 +55,8 @@ alias gs="git s"
 # Ruby/Rails
 alias be="bundle exec"
 alias bi="bundle install"
-alias rc="bundle exec rails c"
-alias rcs="bundle exec rails c -s"
+alias rc="rails console"
+alias rcs="rails console --sandbox"
 alias tfdl="tail -f log/development.log"
 alias tftl="tail -f log/test.log"
 
