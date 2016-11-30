@@ -38,5 +38,7 @@
   "one-light-ui":
     layoutMode: "Compact"
     tabSizing: "Minimum"
+  "tree-view":
+    showOnRightSide: true
   welcome:
     showOnStartup: false
