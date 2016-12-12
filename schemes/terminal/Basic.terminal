@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CursorBlink</key>
+	<false/>
+	<key>CursorType</key>
+	<integer>0</integer>
 	<key>Font</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -14,24 +18,34 @@
 	<key>FontAntialias</key>
 	<true/>
 	<key>FontHeightSpacing</key>
-	<real>1.3</real>
+	<integer>1</integer>
 	<key>FontWidthSpacing</key>
 	<integer>1</integer>
 	<key>ProfileCurrentVersion</key>
-	<real>2.04</real>
+	<real>2.0499999999999998</real>
+	<key>ShowActiveProcessArgumentsInTitle</key>
+	<false/>
+	<key>ShowActiveProcessInTitle</key>
+	<false/>
 	<key>ShowDimensionsInTitle</key>
 	<false/>
+	<key>ShowRepresentedURLInTitle</key>
+	<true/>
+	<key>ShowRepresentedURLPathInTitle</key>
+	<false/>
+	<key>ShowShellCommandInTitle</key>
+	<false/>
+	<key>ShowWindowSettingsNameInTitle</key>
+	<false/>
 	<key>columnCount</key>
-	<integer>180</integer>
+	<integer>140</integer>
 	<key>name</key>
 	<string>Basic</string>
 	<key>rowCount</key>
-	<integer>35</integer>
+	<integer>50</integer>
 	<key>shellExitAction</key>
 	<integer>1</integer>
 	<key>type</key>
 	<string>Window Settings</string>
-	<key>warnOnShellCloseAction</key>
-	<integer>1</integer>
 </dict>
 </plist>
