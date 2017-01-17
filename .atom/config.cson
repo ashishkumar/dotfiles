@@ -25,11 +25,10 @@
       "one-light-syntax"
     ]
   editor:
-    fontFamily: "SF Mono"
+    fontFamily: "Courier Prime Code"
     fontSize: 12
     invisibles:
       eol: " "
-    showInvisibles: true
   "exception-reporting":
     userId: "5933e6f3-2312-f159-fa30-02a1f1c8225f"
   "one-dark-ui":
