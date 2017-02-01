@@ -25,8 +25,8 @@
       "one-light-syntax"
     ]
   editor:
-    fontFamily: "Courier Prime Code"
-    fontSize: 12
+    fontFamily: "SF Mono"
+    fontSize: 11
     invisibles:
       eol: " "
   "exception-reporting":
