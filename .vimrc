@@ -38,8 +38,8 @@ set modelines=4
 set exrc
 set secure
 " Enable line numbers
-"set number
-"set numberwidth=5
+set number
+set numberwidth=5
 " Enable syntax highlighting
 syntax on
 " Highlight current line
@@ -134,5 +134,5 @@ set autoindent
 " set breakindent
 " set breakindentopt=shift:4
 
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 
