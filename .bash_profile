@@ -37,7 +37,7 @@ alias xcode="open -a Xcode"
 alias upgrade="brewd; mas upgrade"
 
 # UNIX Helpers
-alias f="grep --line-number --recursive --binary-file=without-match --color=always . -e"
+alias f="grep --line-number --recursive --binary-file=without-match --color=always --exclude='./log/*' . -e"
 alias l="ls -aGhl"
 alias t="tree -Cph --du"
 
