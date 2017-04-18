@@ -143,3 +143,8 @@ crashlytics-build.properties
 .sass-cache
 node_modules
 
+# ===================================================================
+# MICROSOFT VISUAL STUDIO CODE
+# ===================================================================
+.vscode/
+
