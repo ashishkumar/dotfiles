@@ -47,10 +47,10 @@ alias gc="git commit -m"
 alias gac="git commit -am"
 alias gco="git checkout"
 alias gd="git difftool"
-alias gl="git l"
+alias gl="git log --color --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>"
 alias gp="git push"
 alias gpl="git pull"
-alias gs="git s"
+alias gs="git status -sb"
 
 # Ruby/Rails
 alias be="bundle exec"
