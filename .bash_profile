@@ -2,13 +2,29 @@
 export LANG=en_US.UTF-8
 
 # TERMINAL PROMPT
+# ===============
+
 # Git branch script from http://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\[$(tput setaf 4)\]\w\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput sgr0)\] "
+# Reset Prompt
+export PS1=""
+
+# Add Current Time
+export PS1=$PS1"\[$(tput setaf 7)\]\D{%T} "
+
+# Current Working Directory
+export PS1=$PS1"\[$(tput setaf 4)\]\w"
+
+# Current Git Branch
+export PS1=$PS1"\[$(tput setaf 2)\]\$(parse_git_branch)"
+
+# Reset Colour
+export PS1=$PS1"\[$(tput sgr0)\] "
+
 
 # SET PATH
 # ========
