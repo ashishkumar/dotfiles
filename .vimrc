@@ -1,6 +1,4 @@
 syntax enable
-"set background=dark
-":colorscheme solarized
 
 " Make Vim more useful
 set nocompatible
@@ -24,9 +22,7 @@ let mapleader=","
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
-if exists("&undodir")
-	set undodir=~/.vim/undo
-endif
+set undodir=~/.vim/undo
 
 " Don’t create backups when editing files in certain directories
 set backupskip=/tmp/*,/private/tmp/*
@@ -42,12 +38,8 @@ set number
 set numberwidth=5
 " Enable syntax highlighting
 syntax on
-" Highlight current line
-" set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
-" Show “invisible” characters
-"set list
 " Highlight searches
 set hlsearch
 " Ignore case of searches
@@ -72,11 +64,6 @@ set showmode
 set title
 " Show the (partial) command as it’s being typed
 set showcmd
-" Use relative line numbers
-"if exists("&relativenumber")
-"	set relativenumber
-"	au BufReadPost * set relativenumber
-"endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
@@ -106,12 +93,9 @@ endif
 set expandtab
 
 set runtimepath^=~/.vim/packages/ctrlp.vim
-"set runtimepath^=~/.vim/packages/vim-airline
-"set runtimepath^=~/.vim/packages/vim-airline-themes
 set runtimepath^=~/.vim/packages/editorconfig-vim
 set runtimepath^=~/.vim/packages/vim-rails
 set runtimepath^=~/.vim/packages/vim-bundler
-"set runtimepath^=~/.vim/packages/vim-gitgutter
 
 " Set default shell
 set shell=/usr/local/bin/bash
@@ -131,8 +115,3 @@ set splitbelow
 set splitright
 
 set autoindent
-" set breakindent
-" set breakindentopt=shift:4
-
-"let g:airline_powerline_fonts = 1
-
