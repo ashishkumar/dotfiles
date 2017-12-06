@@ -116,6 +116,9 @@ export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
 # Speed up Cocoapods
 export COCOAPODS_DISABLE_STATS=1
 
+# Disable Homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1
+
 # Use up/down arrow keys to search history
 # http://furbo.org/2014/09/03/the-terminal/#search-setup
 bind '"\e[A":history-search-backward'
@@ -125,4 +128,3 @@ bind '"\e[B":history-search-forward'
 # http://superuser.com/questions/137438/how-to-unlimited-bash-shell-history
 HISTSIZE=
 HISTFILESIZE=
-
