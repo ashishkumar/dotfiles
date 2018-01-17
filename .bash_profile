@@ -54,7 +54,7 @@ alias upgrade="brewd; mas upgrade"
 alias dockspacer="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
 
 # UNIX Helpers
-alias f="grep --line-number --recursive --binary-file=without-match --color=always --exclude='./log/*' . -e"
+alias f="grep --line-number --ignore-case --recursive --binary-file=without-match --color=always --exclude-dir={log,tmp} . -e"
 alias l="ls -aGhl"
 alias t="tree -Cph --du"
 
