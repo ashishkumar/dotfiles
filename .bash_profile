@@ -80,6 +80,9 @@ alias tftl="tail -f log/test.log"
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
 
+# PHP HTTP Server
+alias phps="php -S localhost:3000"
+
 # FUNCTIONS
 # =========
 
