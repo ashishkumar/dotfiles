@@ -115,6 +115,11 @@ prompt_timestamp() {
 # Custom Pow Domains
 export POW_EXT_DOMAINS=io
 
+# Bash Completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # Timing Terminal Support
 # PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
 # export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
