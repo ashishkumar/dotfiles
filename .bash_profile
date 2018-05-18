@@ -132,5 +132,5 @@ bind '"\e[B":history-search-forward'
 
 # Unlimited Bash History
 # http://superuser.com/questions/137438/how-to-unlimited-bash-shell-history
-HISTSIZE=
-HISTFILESIZE=
+export HISTSIZE=
+export HISTFILESIZE=
