@@ -49,7 +49,7 @@ eval "$(hub alias -s)"
 # ALIASES
 # =======
 
-alias brewd="brew update && brew upgrade && brew cleanup && brew doctor"
+alias brewd="brew update && brew upgrade && brew doctor"
 alias flushdns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias reload="source ~/.bash_profile"
 alias xcode="open -a Xcode"
