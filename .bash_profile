@@ -116,8 +116,8 @@ prompt_timestamp() {
 export POW_EXT_DOMAINS=io
 
 # Timing Terminal Support
-PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
-export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
+# PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+# export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
 
 # Speed up Cocoapods
 export COCOAPODS_DISABLE_STATS=1
