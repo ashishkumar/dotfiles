@@ -1,6 +1,9 @@
 # ENCODING
 export LANG=en_US.UTF-8
 
+# DEFAULT EDITOR
+export EDITOR="code --wait"
+
 # TERMINAL PROMPT
 # ===============
 
