@@ -57,7 +57,7 @@ alias upgrade="brewd; mas upgrade"
 alias dockspacer="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
 
 # UNIX Helpers
-alias f="grep --line-number --ignore-case --recursive --binary-file=without-match --color=always --exclude-dir={log,tmp} . -e"
+alias f="grep --line-number --ignore-case --recursive --binary-file=without-match --color=always --exclude-dir={log,tmp,node_modules,public} . -e"
 alias l="ls -aGhl"
 alias t="tree -Cph --du"
 
@@ -69,7 +69,7 @@ alias gac="git commit -am"
 alias gd="git difftool"
 alias gl="git log --color --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>'"
 alias gp="git push"
-alias gpl="git pull"
+alias gpl="git pull --rebase"
 alias gs="git status -sb"
 
 # Ruby/Rails
