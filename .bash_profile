@@ -140,3 +140,4 @@ bind '"\e[B":history-search-forward'
 # http://superuser.com/questions/137438/how-to-unlimited-bash-shell-history
 export HISTSIZE=
 export HISTFILESIZE=
+export HISTTIMEFORMAT="[%F %T] "
