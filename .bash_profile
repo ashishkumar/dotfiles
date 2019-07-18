@@ -107,7 +107,7 @@ wifioff() {
 }
 
 prompt_timestamp() {
-  export PS1=export PS1="\[$(tput setaf 7)\]\D{%T} "$PS1
+  export PS1="\[$(tput setaf 7)\]\D{%T} "$PS1
 }
 
 # MISC
