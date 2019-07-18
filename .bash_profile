@@ -79,6 +79,7 @@ alias rc="rails console"
 alias rcs="rails console --sandbox"
 alias tfdl="tail -f log/development.log"
 alias tftl="tail -f log/test.log"
+alias rlc="bundle exec rake log:clear"
 
 # Python HTTP Server
 alias hs="python -m SimpleHTTPServer 3000"
