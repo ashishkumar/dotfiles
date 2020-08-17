@@ -3,7 +3,7 @@
 	email = ashish@ashish.co
 [core]
 	editor = "code --wait"
-	excludesfile = /Users/Ashish/.gitignore_global
+	excludesfile = /Users/ashish/.gitignore_global
 	# mergeoptions = --no-edit
 [mergetool]
 	prompt = false
